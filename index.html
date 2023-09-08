@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(17, 17, 78);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            background-color: rgb(69, 145, 69);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: purple;
+            font-size: 15px;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(125, 125, 189);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            justify-content: space-around;
+            display: flex;
+            margin: 80px 0;
+        }
+
+        .firstSection div {
+            width: 40%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 80px 0;
+        }
+
+        .leftSection .btn {
+            font-size: 15px;
+            padding: 12px;
+            background: rgb(77, 29, 77);
+            color: white;
+            border: 2px solid white;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+
+        .rightSection img {
+            width: 90%;
+
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        #element {
+            color: purple;
+        }
+
+        .secondSection {
+            max-width: 90vw;
+            margin: auto;
+            font-size: 12px;
+            height: 80vh;
+
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 30px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+            display: flex;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 90px;
+            width: 159px;
+        }
+
+        .vertical-desc {
+            top: 320px;
+            color: grey;
+            width: 150px;
+            font-size: 13px;
+
+        }
+
+        footer {
+            background-color: rgb(9, 9, 27);
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Welcome to Portfolio Page</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <p>Hello Everyone,My name is <span class="purple">Bhagyashri</span>
+                    <abbr> This is the portfolio developing website</abbr>
+                </p>
+                <span id="element"></span>
+                <div><button class="btn">upload resume</button>
+            <button class="btn">visit</button></div>
+            </div>
+
+            <div class="rightSection">
+                <img src="images/port.png">
+            </div>
+            
+
+        </section>
+        <hr color="black">
+        <section class="secondSection">
+            <h2>Work Experience</h2>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        HTML Developer(2015-2016)
+                        <div class="vertical-desc">
+                            HTML Developer know the tags of the language.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        CSS Developer(2016-2017)
+                        <div class="vertical-desc">
+                           styled out the website.which is good to see on browser.
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        javascript Developer(2017-2018)
+                        <div class="vertical-desc">
+                         language which is used for the program on big website
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        HTML Developer(2018-2019)
+                        <div class="vertical-desc">
+                            HTML Developer know the tags of the language.
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        HTML Developer(2019-2020)
+                        <div class="vertical-desc">
+                            HTML Developer know the tags of the language.
+                        </div>
+                    </div>
+
+
+                </div> 
+
+        </section>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Developing', 'Graphic Design', 'Digital Marketing'],
+                typeSpeed: 50,
+            });
+        </script>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Bhagus portfolio</h3>
+            </div>
+
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-rights">
+            www.portfolio.com |All rights reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>
